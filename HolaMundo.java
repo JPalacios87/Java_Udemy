@@ -2,16 +2,12 @@
 
 public class HolaMundo {
     public static void main(String[] args) {
-        var usuario = "Juan";
-        var titulo = "Ingeniero";
-        var union = titulo + " " + usuario;
-        System.out.println("union = " + union);
+        String nombre = "Karla";
 
-        var i = 3;
-        var j = 4;
-        System.out.println(i + j);//se realiza la suma de numeros
-        System.out.println(i + j + usuario);//evaluación de izq a derecha realiza suma
-        System.out.println(usuario + i + j);//todo lo toma como una cadena
-        System.out.println(usuario + (i + j));//modifica la prioridad en la evaluacion
+        System.out.println("Nueva linea: \n" + nombre);
+        System.out.println("Tabulador: \t" + nombre);
+        System.out.println("Retroceso: \b\b" + nombre);
+        System.out.println("Comilla simple: \'" + nombre + "\'");//uso el simbolo \ para escapar lo que le siga a continuación, incluso comillas simples
+        System.out.println("Comilla doble: \"" + nombre + "\" ");//uso el simbolo \ para escapar lo que le siga a continuación, incluso comillas dobles
     }
 }
