@@ -2,30 +2,16 @@
 
 public class HolaMundo {
     public static void main(String[] args) {
-        //Defino la variable
-        int miVariableEntera = 10;
-        System.out.println(miVariableEntera);
-        //Modifico el valor de la variable
-        miVariableEntera = 5;
-        System.out.println(miVariableEntera);
+        var usuario = "Juan";
+        var titulo = "Ingeniero";
+        var union = titulo + " " + usuario;
+        System.out.println("union = " + union);
 
-        String miVariableCadena = "Saludos";
-        System.out.println(miVariableCadena);
-
-        miVariableCadena = "Adiós";
-        System.out.println(miVariableCadena);
-
-        // var - Inferencia de tipos en Java
-        var miVariableEntera2 = 15;
-        System.out.println(miVariableEntera2);
-        var miVariableCadena2 = "Valeria";
-        System.out.println("miVariableCadena2 = " + miVariableCadena2);
-
-        //Valores permitidos en el nombre de variables
-        var miVariable = 1;
-        var _miVariable = 2;
-        var $miVariable = 3;
-        //var áVariable = 10; No se recomienda utilizar
-        //var #Variable = 2; No se permite utilizar caracteres especiales
+        var i = 3;
+        var j = 4;
+        System.out.println(i + j);//se realiza la suma de numeros
+        System.out.println(i + j + usuario);//evaluación de izq a derecha realiza suma
+        System.out.println(usuario + i + j);//todo lo toma como una cadena
+        System.out.println(usuario + (i + j));//modifica la prioridad en la evaluacion
     }
-} 
+}
