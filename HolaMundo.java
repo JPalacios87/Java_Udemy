@@ -4,31 +4,21 @@ import java.util.Scanner;
 
 public class HolaMundo {
     public static void main(String[] args) {
-        char miCaracter = 'a';
-        System.out.println("Valor miCaracter = " + miCaracter);
+        boolean varBoolean = false;
+        System.out.println("valor varBoolean:" + varBoolean);
 
-        char varChar = '\u0021';
-        System.out.println("varChar = " + varChar);
-
-        char varCharDecimal = 33;
-        System.out.println("varCharDecimal= " + varCharDecimal);
-
-        char varCharSimbolo = '!';
-        System.out.println("varCharSimbolo= " + varCharSimbolo);
-
-        var varChar1 = '\u0021';
-        System.out.println("varChar1 = " + varChar1);
-
-        var varCharDecimal2 = 33;
-        System.out.println("varCharDecimal2= " + varCharDecimal2);
-
-        var varCharSimbolo3 = '!';
-        System.out.println("varCharSimbolo3= " + varCharSimbolo3);
-
-        int variableEnteraSimbolo = '!';
-        System.out.println("variableEnteraSimbolo = " + variableEnteraSimbolo);
-
-        int letra = 'A';
-        System.out.println("letra = " + letra);
+        if (varBoolean == true) {
+            System.out.println("La bandera es verdadera");
+        } else {
+            System.out.println("La bandera es falsa");
         }
-}   
+
+        var edad = 10;
+        //var esAdulto = edad >= 18; //se define el valor de la variable con una expresión que devuelve o true o false.
+        if (edad >= 18) { //aunque no está escrito explícitamente, dentro del if se pregunta si la variable esAdulto es true.
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
+    }
+}
