@@ -4,21 +4,17 @@ import java.util.Scanner;
 
 public class HolaMundo {
     public static void main(String[] args) {
-        boolean varBoolean = false;
-        System.out.println("valor varBoolean:" + varBoolean);
+        // Convertir un tipo String a un tipo int
+        var edad = Integer.parseInt("20");
+        System.out.println("edad = " + (edad + 1));
 
-        if (varBoolean == true) {
-            System.out.println("La bandera es verdadera");
-        } else {
-            System.out.println("La bandera es falsa");
-        }
+        var valorPI = Double.parseDouble("3.1416");
+        System.out.println("valorPI = " + valorPI);
 
-        var edad = 10;
-        //var esAdulto = edad >= 18; //se define el valor de la variable con una expresión que devuelve o true o false.
-        if (edad >= 18) { //aunque no está escrito explícitamente, dentro del if se pregunta si la variable esAdulto es true.
-            System.out.println("Eres mayor de edad");
-        } else {
-            System.out.println("Eres menor de edad");
+        //Pedir un valor:
+        var consola = new Scanner(System.in);
+        System.out.println("Proporciona tu edad: ");
+        edad = Integer.parseInt(consola.nextLine());
+        System.out.println("Edad: " + edad);
         }
-    }
 }
