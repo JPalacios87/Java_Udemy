@@ -18,13 +18,13 @@ public class TiendaLibros {
         var moneda = "\u20AC";
 
         var consolaEnvioGratuito = new Scanner(System.in);
-        System.out.println("¿Envío gratuito: ");
+        System.out.println("¿Envío gratuito?: ");
         var envioGratuito = consolaEnvioGratuito.nextLine();
 
         System.out.println(
             "Nombre: \n" + nombre + " #" + id + "\n" +
             "precio: " + precio + moneda + "\n" +
-            "Envio gratuito: \n" + envioGratuito + "\n"
+            "Envio gratuito: " + envioGratuito
             );
     }
 }
