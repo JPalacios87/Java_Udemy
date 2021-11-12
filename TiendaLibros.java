@@ -15,7 +15,6 @@ public class TiendaLibros {
         var consolaPrecio = new Scanner(System.in);
         System.out.println("Introduce el precio: ");
         var precio = consolaPrecio.nextLine();
-        var moneda = "\u20AC";
 
         var consolaEnvioGratuito = new Scanner(System.in);
         System.out.println("¿Envío gratuito?: ");
@@ -23,7 +22,7 @@ public class TiendaLibros {
 
         System.out.println(
             "Nombre: \n" + nombre + " #" + id + "\n" +
-            "precio: " + precio + moneda + "\n" +
+            "precio: " + precio + " Euros" + "\n" +
             "Envio gratuito: " + envioGratuito
             );
     }
