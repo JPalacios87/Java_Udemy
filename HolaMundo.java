@@ -1,29 +1,28 @@
-import java.util.Scanner;
-
 //Mi clase en Java
 
 public class HolaMundo {
     public static void main(String[] args) {
-        // Convertir un tipo String a un tipo int
-        var edad = Integer.parseInt("20");
-        System.out.println("edad = " + (edad + 1));
+        // var is not availabel in a compound declaration
+        int a = 3, b = 2;
+        var resultado = a + b;
+        System.out.println("Resultado suma = " + resultado);
 
-        var valorPI = Double.parseDouble("3.1416");
-        System.out.println("valorPI = " + valorPI);
+        resultado = a - b;
+        System.out.println("Resultado resta = " + resultado);
 
-        // Pedir un valor:
-        var consola = new Scanner(System.in);
-        /* System.out.println("Proporciona tu edad: "); edad =
-         * Integer.parseInt(consola.nextLine()); System.out.println("Edad: " + edad);
-         */
-        var edadTexto = String.valueOf(10);
-        System.out.println("edadTexto =" + edadTexto);
+        resultado = a * b;
+        System.out.println("Resultado multiplicación = " + resultado);
 
-        var caracter = "hola".charAt(1);
-        System.out.println("caracter: " + caracter);
+        var resultado2 = 3D / b;
+        System.out.println("Resultado división= " + resultado2);
 
-        System.out.println("Propociona un caracter: ");
-        caracter = consola.nextLine().charAt(0);
-        System.out.println("caracter: "+ caracter);
+        resultado = a % b;
+        System.out.println("Resultado resto = " + resultado);
+
+        if (b % 2 == 0) {
+            System.out.println("Es número par");
+        } else {
+            System.out.println("Es número impar");
+        }
     }
 }
