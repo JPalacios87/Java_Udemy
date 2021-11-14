@@ -4,25 +4,16 @@ public class HolaMundo {
     public static void main(String[] args) {
         // var is not availabel in a compound declaration
         int a = 3, b = 2;
-        var resultado = a + b;
-        System.out.println("Resultado suma = " + resultado);
+        int c = a + 5 - b;
+        System.out.println("c = " + c);
 
-        resultado = a - b;
-        System.out.println("Resultado resta = " + resultado);
+        a += 1; //a = a + 1
+        System.out.println("a = " + a);
 
-        resultado = a * b;
-        System.out.println("Resultado multiplicación = " + resultado);
+        a += 3; //a = a + 3
+        System.out.println("a = " + a);
 
-        var resultado2 = 3D / b;
-        System.out.println("Resultado división= " + resultado2);
-
-        resultado = a % b;
-        System.out.println("Resultado resto = " + resultado);
-
-        if (b % 2 == 0) {
-            System.out.println("Es número par");
-        } else {
-            System.out.println("Es número impar");
-        }
+        a -= 2; //a = a - 2
+        System.out.println("a = " + a);
     }
 }
