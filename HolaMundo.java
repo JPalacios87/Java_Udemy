@@ -25,17 +25,17 @@ public class HolaMundo {
         System.out.println("g = " + g);
         System.out.println("h = " + h);
 
-        //decremento
-        //1. predecremento
+        // decremento
+        // 1. predecremento
         var i = 2;
         var j = --i;
-        System.out.println("i = " + i);//ya está decrementada
+        System.out.println("i = " + i);// ya está decrementada
         System.out.println("j = " + j);
 
-        //1. posdecremento
+        // 1. posdecremento
         var k = 4;
-        var l = k--;//primero se usa el valor de la variable y posteriormente se asigna
-        System.out.println("k = " + k);//tenía pendiente un decremento
+        var l = k--;// primero se usa el valor de la variable y posteriormente se asigna
+        System.out.println("k = " + k);// tenía pendiente un decremento
         System.out.println("l = " + l);
-    } 
+    }
 }
