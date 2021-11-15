@@ -2,11 +2,17 @@
 
 public class HolaMundo {
     public static void main(String[] args) {
-        var resultado = (1 > 2) ? "verdadero" : "falso"; // es una simplificación de la estructura "if else"
-        System.out.println("resultado = " + resultado);
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--; // el postdecremento se produce la segunda vez que se lee la variable "y"
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
 
-        var numero = 8;
-        resultado = (numero % 2 == 0) ? "es par" : "es impar";
-        System.out.println("resultado = " + resultado);
+        var resultado = 4 + 5 * 6 / 3; // 4 + ((5*6)/3)
+        System.out.println("resultado = " + resultado);//14
+
+        resultado = (4 + 5) * 6 / 3;
+        System.out.println("resultado = " + resultado);//18
     }
 }
