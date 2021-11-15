@@ -3,39 +3,20 @@
 public class HolaMundo {
     public static void main(String[] args) {
         var a = 3;
-        var b = -a;
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        var b = 2;
 
-        var c = true;
-        var d = !c;
+        var c = (a == b);
         System.out.println("c = " + c);
+
+        var d = (a != b);
         System.out.println("d = " + d);
 
-        // incremento
-        // 1. preincremento (símbolo antes de la variable)
-        var e = 3;
-        var f = ++e;// primero se incremente la variable y después se asigna
-        System.out.println("e = " + e);// ya está incrementada
+        var cadena1 = "Hola";
+        var cadena2 = "Hola";
+        var e = (cadena1 == cadena2);//Compara referencias de objetos
+        System.out.println("e = " + e);
+
+        var f = cadena1.equals(cadena2);//Comparamos contenido de cadenas
         System.out.println("f = " + f);
-
-        // 2. postincremento (símbolo después de la variable)
-        var g = 5;
-        var h = g++;// primero se asigna el valor de la variable y después se incrementa
-        System.out.println("g = " + g);
-        System.out.println("h = " + h);
-
-        // decremento
-        // 1. predecremento
-        var i = 2;
-        var j = --i;
-        System.out.println("i = " + i);// ya está decrementada
-        System.out.println("j = " + j);
-
-        // 1. posdecremento
-        var k = 4;
-        var l = k--;// primero se usa el valor de la variable y posteriormente se asigna
-        System.out.println("k = " + k);// tenía pendiente un decremento
-        System.out.println("l = " + l);
     }
 }
