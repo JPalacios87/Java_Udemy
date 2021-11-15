@@ -2,23 +2,11 @@
 
 public class HolaMundo {
     public static void main(String[] args) {
-        var a = 8;
-        var valorMinimo = 0;
-        var valorMaximo = 10;
-        var resultado = a >= valorMinimo && a <= valorMaximo; // operador 'and' (&&) evalua ambas expresiones y las dos
-                                                              // tiene que ser verdaderas, de los contrario es false
-        if (resultado) {
-            System.out.println("Dentro de rango");
-        } else {
-            System.out.println("Fuera de rango");
-        }
-        var vacaciones = false;
-        var diaDescanso = true;
+        var resultado = (1 > 2) ? "verdadero" : "falso"; // es una simplificación de la estructura "if else"
+        System.out.println("resultado = " + resultado);
 
-        if (vacaciones || diaDescanso) {
-            System.out.println("Padre puede asistir al juego del hijo");
-        } else {
-            System.out.println("El padre está ocupado");
-        }
+        var numero = 8;
+        resultado = (numero % 2 == 0) ? "es par" : "es impar";
+        System.out.println("resultado = " + resultado);
     }
 }
