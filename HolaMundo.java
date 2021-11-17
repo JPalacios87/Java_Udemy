@@ -2,17 +2,12 @@
 
 public class HolaMundo {
     public static void main(String[] args) {
-        var x = 5;
-        var y = 10;
-        var z = ++x + y--; // el postdecremento se produce la segunda vez que se lee la variable "y"
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
+        var condición = true;
 
-        var resultado = 4 + 5 * 6 / 3; // 4 + ((5*6)/3)
-        System.out.println("resultado = " + resultado);//14
-
-        resultado = (4 + 5) * 6 / 3;
-        System.out.println("resultado = " + resultado);//18
+        if (condición) {
+            System.out.println("Condición verdadera");
+        } else {//El else es opcional, podría no estar y ejecutarse solo el if.
+            System.out.println("Condición falsa");
+        }
     }
 }
