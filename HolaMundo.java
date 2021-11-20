@@ -6,5 +6,6 @@ public class HolaMundo {
             System.out.println("Contador =  " + contador);
             contador++;
         }
+        System.out.println("contador = " + contador);
     }
 }
