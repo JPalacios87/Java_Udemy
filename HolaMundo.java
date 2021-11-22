@@ -1,10 +1,10 @@
 //Mi clase en Java
 public class HolaMundo {
     public static void main(String[] args) {
-
+        inicio:
         for (var contador = 0; contador < 3; contador++) {
             if (contador % 2 == 0) {
-                continue; // Ir a la siguiente iteracion del ciclo for
+                continue inicio; // Ir a la siguiente iteracion del ciclo for
             }
             System.out.println("Contador =  " + contador);
         }
