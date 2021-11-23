@@ -22,7 +22,7 @@ public class PruebaPersona {
 
         persona2.desplegarInformacion();// Como en ningún momento le hemos especificado los valores de los atributos
                                         // nombres y apellidos, lo que se imprime es el valor de "null", que significa
-                                        // ausencia de valor.
+                                        // ausencia de valor
 
         /**
          * Los objetos tienen los mismos atributos pero no comparten la misma
