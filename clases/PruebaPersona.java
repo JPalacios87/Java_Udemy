@@ -4,14 +4,14 @@ public class PruebaPersona {
     public static void main(String[] args) {
         Persona persona1; // declaro una variable persona
         persona1 = new Persona(); // creo el objeto de persona
+
+        persona1.nombre = "Juan";
+        persona1.apellido = "Perez";
+        persona1.desplegarInformacion();
         /**
          * También se puede declarar la variable y crear el objeto en una misma línea:
          * Persona persona2 = new Persona()
          */
-        persona1.nombre = "Juan";
-        persona1.apellido = "Perez";
-        persona1.desplegarInformacion();
-
         Persona persona2 = new Persona();
         System.out.println("persona1: " + persona1); // Se imprime la variable persona1, pero como no se imprime desde
                                                      // el método "desplegarInformación", lo que se imprime es el
