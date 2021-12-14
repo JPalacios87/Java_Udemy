@@ -1,5 +1,3 @@
-package clases;
-
 public class PruebaPersona {
     public static void main(String[] args) {
         Persona persona1; // declaro una variable persona
