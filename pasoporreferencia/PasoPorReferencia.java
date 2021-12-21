@@ -8,9 +8,12 @@ public class PasoPorReferencia { // El nombre de la clase.
     public static void main(String[] args) { // En cada paquete tiene que haber una clase que lleve el método main.
         Persona persona1 = new Persona(); // Creo un objeto de la clase de la clase Persona.
         persona1.nombre = "Juan";
+        persona1.apellido = "Palacios";
         System.out.println("persona1 nombre: " + persona1.nombre);
+        System.out.println("persona1 apellido: " + persona1.apellido);
         cambiarValor(persona1);
         System.out.println("persona1 nombre: " + persona1.nombre);
+        System.out.println("persona1 apellido: " + persona1.apellido);
     }
 
     public static void cambiarValor(Persona persona) { // Es una variable llamada "persona" que se destruirá cuando
@@ -22,5 +25,6 @@ public class PasoPorReferencia { // El nombre de la clase.
          * almacenado en la memoria.
          */
         persona.nombre = "Carla"; // no hace falta hacer return porque el método es void.
+        persona.apellido = "Hernández";
     }
 }
